@@ -29,10 +29,17 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-row class="d-flex justify-center align-center h-100">
-          <v-col cols="12" class="text-center">
-            <h3 class="home-text0 pa-16 mt-16">
-              "Guiding Your Financial Journey"
-            </h3>
+          <v-col class="text-center">
+            <div class="custom-div">
+              <v-img
+                class="logo-style"
+                src="../assets/logo.png"
+                height="150px"
+                width="150px"
+                cover
+              />
+            </div>
+            <h3 class="home-text0 pa-8">"Guiding Your Financial Journey"</h3>
             <v-btn class="mt-3" color="primary" dark @click="navigateToContact">
               Let's Get Started
             </v-btn>
@@ -72,6 +79,27 @@ export default {
   font-family: sans-serif;
 }
 
+.custom-div {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-style {
+  margin-left: 300px;
+}
+
+@media (max-width: 768px) {
+  .logo-style {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-style {
+    margin-left: 50px;
+  }
+}
 @media (max-width: 768px) {
   .order-md-1,
   .order-md-2 {
