@@ -8,7 +8,7 @@
         <v-col cols="12" md="8" class="order-2 order-md-1">
           <v-row class="d-flex justify-center align-center h-100">
             <v-col cols="12" class="text-justify">
-              <p class="home-text pa-12gi">
+              <p class="home-text pa-12">
                 Mintify distinguishes itself through its holistic approach to
                 financial guidance, seamlessly integrating personalized
                 strategies for individuals and businesses alike. By combining a
