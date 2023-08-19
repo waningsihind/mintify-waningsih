@@ -1,23 +1,17 @@
 <template>
   <div>
-    <v-container
-      fluid
-      style="
-        background-image: url('https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg');
-      "
-    >
-      <h1 class="my-10" style="color: #3d6647; text-align: center">
+    <v-container fluid>
+      <h1 class="my-10 text-h2 text-center" style="color: #3d6647">
         Contact Us
       </h1>
       <v-row>
-        <v-col cols="4">
-          <v-card class="ml-10" elevation="2">
+        <v-col cols="12" md="4" class="mb-4">
+          <v-card class="ml-4 mr-4" elevation="2">
             <v-card-text>
-              <h3 class="text-h6" style="color: #3d6647; text-align: center">
+              <h3 class="text-h6 text-center" style="color: #3d6647">
                 HEADQUARTER
               </h3>
-              <p></p>
-              <p>Address:</p>
+              <p class="mb-1">Address:</p>
               <p>
                 Jl. Serafin Utara VI No. 91<br />
                 Blok B3, Ruko Akasia<br />
@@ -28,12 +22,9 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="8">
-          <v-card class="mx-auto" width="800">
-            <v-card-title
-              class="text-h6"
-              style="color: #3d6647; justify: center"
-            >
+        <v-col cols="12" md="8">
+          <v-card class="mx-auto" width="100%">
+            <v-card-title class="text-h6 justify-center" style="color: #3d6647">
               GET IN TOUCH TODAY
             </v-card-title>
             <v-card-text>
@@ -51,18 +42,17 @@
                 <v-text-field
                   v-model="number"
                   label="Phone Number"
-                  type="number"
-                  min="0"
+                  type="tel"
                   required
                 ></v-text-field>
                 <v-text-field
                   v-model="subject"
-                  label="Region"
+                  label="Subject"
                   required
                 ></v-text-field>
                 <v-textarea
                   v-model="message"
-                  label="How can we help you?"
+                  label="Message"
                   required
                 ></v-textarea>
                 <v-radio-group v-model="contactMethod" row>
@@ -133,8 +123,11 @@ export default {
 </script>
 
 <style scoped>
-.contact {
-  border-top: 50px;
-  border-bottom: 50px;
+@media (max-width: 600px) {
+  .v-card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px !important;
+  }
 }
 </style>

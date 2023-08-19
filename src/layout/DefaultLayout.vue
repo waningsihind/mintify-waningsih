@@ -43,7 +43,7 @@ export default {
         { title: "Home", to: "/" },
         { title: "About", to: "/about" },
         { title: "Our People", to: "/people" },
-        { title: "Business News", to: "/news" },
+        { title: "News", to: "/news" },
         { title: "Contact Us", to: "/contact" },
       ],
     };
