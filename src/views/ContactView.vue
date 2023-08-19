@@ -42,7 +42,7 @@
                 <v-text-field
                   v-model="number"
                   label="Phone Number"
-                  type="tel"
+                  type="number"
                   required
                 ></v-text-field>
                 <v-text-field
